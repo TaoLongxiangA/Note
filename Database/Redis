@@ -1,0 +1,13 @@
+#Redis
+##常用命令
+- set:设置键值对
+- get:根据key读取值
+- exists key:查询key是否存在
+- incr key:自增key对应的value
+- incrby key figure:在key对应值的基础上加上figure
+- decr key:自减key对应的value
+- decrby key figure:在key对应值的基础上减去figure
+- del key:key的值设为nil
+- expire key time:设置key-value失效时间
+- ttl(time to live) key:失效时间倒计时
+
