@@ -9,5 +9,7 @@
 - decrby key figure:在key对应值的基础上减去figure
 - del key:key的值设为nil
 - expire key time:设置key-value失效时间
-- ttl(time to live) key:失效时间倒计时
+- ttl(time to live) key:失效时间倒计时，-1代表永不expire(在set二次设置key时发生)
+- set key value ex time:在一个atomic操作里设置key-value和ttl
+- persist key:退出key的远程终止ing，使键永远存在
 
