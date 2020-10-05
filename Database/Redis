@@ -12,4 +12,7 @@
 - ttl(time to live) key:失效时间倒计时，-1代表永不expire(在set二次设置key时发生)
 - set key value ex time:在一个atomic操作里设置key-value和ttl
 - persist key:退出key的远程终止ing，使键永远存在
+- rpush listName element:list末尾添加新元素
+- lpush listName element:list开头添加新元素
+- lrange listName firstParameter secondParameter:根据index显示list(-1 means last one)
 
