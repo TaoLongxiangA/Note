@@ -23,6 +23,17 @@
 - llen listName:length of list
 ### set操作
 - sadd setName element1 element2 element3:set末尾添加element1 element2 element3
-- srem setName 
+- srem setName element:移除元素element
+- spop setName count:随机移除count个元素
+- smembers setName：显示setName的元素
+- zadd setName score element:利用score排序set
+- zrange setName firstParameter secondParameter:根据index显示set
+### hash操作
+- hset field key value:设置哈希map
+- hmset field key1 value1 key2 value2 key3 value3:在一行存储hash 
+- hgetall field key:显示key所对应的value
+- hincrby field key number:在key所对应value的基础上加上number的值
+- hdel field key:设置key对应的value为nil
+
 
 
